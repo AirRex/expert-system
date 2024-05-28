@@ -7,18 +7,19 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 /* Header styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul {
@@ -31,62 +32,93 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #00adb5;
 }
 
 /* Main content styling */
 main {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Section styling */
 section {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 section h2 {
+    margin-bottom: 20px;
+    color: #00adb5;
+    font-size: 2em;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+section ul li {
     margin-bottom: 10px;
-    color: #333;
 }
 
 /* Contact form styling */
 form label {
     display: block;
     margin: 10px 0 5px;
+    font-weight: bold;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background: #1f1f1f;
+    border: 1px solid #333;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #00adb5;
 }
 
 form button {
-    background: #333;
-    color: #fff;
+    background: #00adb5;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 form button:hover {
-    background: #555;
+    background: #007f8a;
 }
 
 /* Footer styling */
 footer {
-    background: #333;
-    color: #fff;
+    background: #1f1f1f;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
 }
